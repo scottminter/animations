@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,29 +29,65 @@
                                     <constraint firstAttribute="height" constant="267" id="wEA-2g-sa9"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL7-Eh-tUT">
-                                <rect key="frame" x="100" y="511" width="31" height="30"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <action selector="prevImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6O9-b8-L7o"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-Lv-pyn">
-                                <rect key="frame" x="215" y="511" width="32" height="30"/>
+                                <rect key="frame" x="73" y="499" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ISs-NQ-igV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL7-Eh-tUT">
+                                <rect key="frame" x="269" y="499" width="31" height="30"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="prevImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6O9-b8-L7o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qL-Jr-kiL">
+                                <rect key="frame" x="171" y="499" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopImages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0M-Mb-aAv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1t-OL-jj1">
+                                <rect key="frame" x="64" y="141" width="50" height="30"/>
+                                <state key="normal" title="Fade In"/>
+                                <connections>
+                                    <action selector="fadeIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvX-Z6-dZo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6id-s9-n0U">
+                                <rect key="frame" x="162" y="141" width="50" height="30"/>
+                                <state key="normal" title="Slide In"/>
+                                <connections>
+                                    <action selector="slideIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tb9-gY-X8T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iam-QI-NlP">
+                                <rect key="frame" x="267" y="141" width="36" height="30"/>
+                                <state key="normal" title="Grow"/>
+                                <connections>
+                                    <action selector="grow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHy-iO-poy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Obk-i8-RKE" firstAttribute="top" secondItem="6id-s9-n0U" secondAttribute="bottom" constant="29" id="29r-jC-jcI"/>
                             <constraint firstItem="Obk-i8-RKE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3mN-y7-beO"/>
-                            <constraint firstItem="DL7-Eh-tUT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="ZgU-rH-8GI"/>
-                            <constraint firstItem="DL7-Eh-tUT" firstAttribute="top" secondItem="Obk-i8-RKE" secondAttribute="bottom" constant="44" id="dcp-bJ-yB3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Nhc-Lv-pyn" secondAttribute="trailing" constant="112" id="gCQ-xW-9cG"/>
+                            <constraint firstItem="Iam-QI-NlP" firstAttribute="leading" secondItem="6id-s9-n0U" secondAttribute="trailing" constant="55" id="EaH-wt-H8C"/>
+                            <constraint firstItem="DL7-Eh-tUT" firstAttribute="top" secondItem="Obk-i8-RKE" secondAttribute="bottom" constant="32" id="KWn-Bg-u5f"/>
+                            <constraint firstItem="Obk-i8-RKE" firstAttribute="top" secondItem="t1t-OL-jj1" secondAttribute="bottom" constant="29" id="byl-3O-Pfn"/>
+                            <constraint firstItem="8qL-Jr-kiL" firstAttribute="top" secondItem="Obk-i8-RKE" secondAttribute="bottom" constant="32" id="die-Ie-sil"/>
                             <constraint firstItem="Obk-i8-RKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="if4-Kg-W1d"/>
-                            <constraint firstItem="Nhc-Lv-pyn" firstAttribute="top" secondItem="Obk-i8-RKE" secondAttribute="bottom" constant="44" id="lpo-5o-BBe"/>
+                            <constraint firstItem="6id-s9-n0U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBS-Eo-080"/>
+                            <constraint firstItem="6id-s9-n0U" firstAttribute="leading" secondItem="t1t-OL-jj1" secondAttribute="trailing" constant="48" id="kfH-uE-DW4"/>
+                            <constraint firstItem="8qL-Jr-kiL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lz4-xI-Wpz"/>
+                            <constraint firstItem="DL7-Eh-tUT" firstAttribute="leading" secondItem="8qL-Jr-kiL" secondAttribute="trailing" constant="66" id="mUe-qK-gw4"/>
+                            <constraint firstItem="Obk-i8-RKE" firstAttribute="top" secondItem="Iam-QI-NlP" secondAttribute="bottom" constant="29" id="o9b-Lo-KxH"/>
+                            <constraint firstItem="8qL-Jr-kiL" firstAttribute="leading" secondItem="Nhc-Lv-pyn" secondAttribute="trailing" constant="66" id="vt5-By-zXA"/>
+                            <constraint firstItem="Nhc-Lv-pyn" firstAttribute="top" secondItem="Obk-i8-RKE" secondAttribute="bottom" constant="32" id="y6z-dd-cJo"/>
                         </constraints>
                     </view>
                     <connections>
